@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=IntelliJ IDEA Community Edition
+Name=IntelliJ IDEA Ultimate Edition
 Comment=Intelligent Java IDE
-Exec=intellij-idea-community %u
-Icon=intellij-idea-ce
+Exec=intellij-idea-ultimate %u
+Icon=intellij-idea-iu
 Terminal=false
 Type=Application
 Categories=Development;IDE;Java;

@@ -1,0 +1,9 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: source package intellij-idea-Ultimate
+dpkg-buildpackage: source version 2016.3.4-1
+dpkg-buildpackage: source distribution yakkety
+dpkg-buildpackage: source changed by Gert Pellin (mmcommunit- Gert Pellin <Gert@pellin.be>
+ dpkg-source --before-build intellij-idea-ultimate_2016.3.4
+dpkg-buildpackage: host architecture amd64
+dpkg-source: error: source package name 'intellij-idea-Ultimate' is illegal: character 'U' not allowed
+dpkg-buildpackage: error: dpkg-source --before-build intellij-idea-ultimate_2016.3.4 gave error exit status 255

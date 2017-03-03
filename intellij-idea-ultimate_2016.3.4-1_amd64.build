@@ -1,0 +1,45 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc -i -b
+dpkg-buildpackage: source package intellij-idea-ultimate
+dpkg-buildpackage: source version 2016.3.4-1
+dpkg-buildpackage: source distribution yakkety
+dpkg-buildpackage: source changed by Gert Pellin (switch87) <gert@pellin.be>
+ dpkg-source -i --before-build intellij-idea-ultimate_2016.3.4
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ debian/rules build
+dh build
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_icons
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: bouwen van pakket `intellij-idea-ultimate' in `../intellij-idea-ultimate_2016.3.4-1_all.deb'.
+ dpkg-genchanges -b >../intellij-idea-ultimate_2016.3.4-1_amd64.changes
+dpkg-genchanges: binary-only upload - not including any source code
+ dpkg-source -i --after-build intellij-idea-ultimate_2016.3.4
+dpkg-buildpackage: binary only upload (no source included)
+Now running lintian...
+E: intellij-idea-ultimate changes: bad-distribution-in-changes-file yakkety
+W: intellij-idea-ultimate: new-package-should-close-itp-bug
+W: intellij-idea-ultimate: binary-without-manpage usr/bin/intellij-idea-ultimate
+Finished running lintian.

@@ -1,15 +1,9 @@
-# intellij-idea-community
-.deb Packages of IntelliJ IDEA Community Edition for Ubuntu
+# intellij-idea-ultimate
+.deb Packages of IntelliJ IDEA Ultimate Edition for Ubuntu
 
 The latest upstream version is 2016.2.4 which is included in the package version 2016.2.4.
 
 ## Adding the ppa to Ubuntu
-
-```
-sudo apt-add-repository ppa:mmk2410/intellij-idea-community
-sudo apt-get update
-sudo apt-get install intellij-idea-community
-```
 
 ## Updating the package
 
@@ -25,8 +19,8 @@ To update the version follow the following steps (the old version is here 15.0.1
  3. Rename the following
 
  ```
- mv intellij-idea-community_15.0.1 intellij-idea-community_15.0.2
- mv intellij-idea-community_15.0.1.orig.tar.gz intellij-idea-community_15.0.2.orig.tar.gz
+ mv intellij-idea-ultimate_15.0.1 intellij-idea-ultimate_15.0.2
+ mv intellij-idea-ultimate_15.0.1.orig.tar.gz intellij-idea-ultimate_15.0.2.orig.tar.gz
  ```
 
  4. Edit the README.md and update the version numbers
@@ -34,7 +28,7 @@ To update the version follow the following steps (the old version is here 15.0.1
  5. Go into the build files directory
 
  ```
- cd intellij-idea-community_15.0.2/debian
+ cd intellij-idea-ultimate_15.0.2/debian
  ```
 
  6. Edit the changelog file and prepend a new changelog entry. You can just copy an old one and update the values in it
@@ -62,13 +56,13 @@ To update the version follow the following steps (the old version is here 15.0.1
  11. Remove the old files
 
  ```
- rm intellij-idea-community_15.0.1-1*
+ rm intellij-idea-ultimate_15.0.1-1*
  ```
 
  12. Install the package to test it
 
  ```
- sudo dpkg -i intellij-idea-community_15.0.2-1_all.deb
+ sudo dpkg -i intellij-idea-ultimate_15.0.2-1_all.deb
  ```
 
  13. If everything works, add yourself to the CONTRIBUTORS.txt

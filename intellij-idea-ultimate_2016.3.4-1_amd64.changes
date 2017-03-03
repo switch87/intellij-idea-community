@@ -1,0 +1,22 @@
+Format: 1.8
+Date: Fri, 03 Mar 2017 12:34:06 +0100
+Source: intellij-idea-ultimate
+Binary: intellij-idea-ultimate
+Architecture: all
+Version: 2016.3.4-1
+Distribution: yakkety
+Urgency: low
+Maintainer: Gert Pellin <gert@pellin.be>
+Changed-By: Gert Pellin (switch87) <gert@pellin.be>
+Description: 
+ intellij-idea-ultimate - IntelliJ IDEA Ultimate Edition
+Changes: 
+ intellij-idea-ultimate (2016.3.4-1) yakkety; urgency=low
+ .
+   * Upstream Version 2016.3.4
+Checksums-Sha1: 
+ fe089aec0471b17ef2c5cf60f22d59c1760a0e51 8058 intellij-idea-ultimate_2016.3.4-1_all.deb
+Checksums-Sha256: 
+ e633be0d10e760af2e5ed350141168291b2aaf6b1da941b8b216bff3350257ce 8058 intellij-idea-ultimate_2016.3.4-1_all.deb
+Files: 
+ f97a0de339fb7bfe19064b39906536c8 8058 devel optional intellij-idea-ultimate_2016.3.4-1_all.deb

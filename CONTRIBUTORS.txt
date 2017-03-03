@@ -1,3 +1,4 @@
+Gert Pellin (switch87) <gert@pellin.be>
 Marcel Kapfer (mmk2410) <marcelmichaelkapfer@yahoo.co.nz>
 Bart de Koning <bartdaking@gmail.com>
 Francesco Levorato (flevour) <git@flevour.net>
